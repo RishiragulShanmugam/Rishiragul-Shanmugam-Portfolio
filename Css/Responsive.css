@@ -1,0 +1,65 @@
+@media (max-width:1199px){
+    .aside{
+        left: -315px;
+    }
+    .main-content{
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .aside .nav-toggler{
+        display: block;
+        left: 20px;
+        top: 20px;
+    }
+}
+
+
+@media (max-width:991px){
+    .project-box,
+    .contact-block{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .popup-project-container{
+        width: 70%;
+    }
+    .home .home-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0%;
+    }
+    .home .home-img{
+        display: none;
+    }
+    .skill-box-section{
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+    .service .service-item{
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+}
+@media (max-width:850px){
+    .popup-project-container{
+        width: 78%;
+    }
+}
+
+@media (max-width:700px){
+    .skill-box-section{
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+    .popup-project-container{
+        width: 85%;
+    }
+    .service .service-item,
+    .project-box{
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+}
+
+
