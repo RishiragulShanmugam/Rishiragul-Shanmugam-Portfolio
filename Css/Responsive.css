@@ -138,6 +138,12 @@
         flex: 0 0 90%;
         max-width: 90%;
     }
+    .form-control{
+        height: 35px;
+    }
+    textarea.form-control{
+        height: 100px;
+    }
     .contact-block{
         width: 45%;
         height: auto;
