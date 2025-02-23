@@ -294,14 +294,13 @@ body{
 /* ...home-section-start... */
 
 .home{
-    padding: 80px 60px 10px;
+    padding: 60px 60px 30px;
     display: flex;
     color: var(--text-black-900);
 }
 .home-container{
     display: flex;
     flex-wrap: wrap;
-    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;

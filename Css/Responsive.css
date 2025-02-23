@@ -130,6 +130,7 @@
     }
     .section{
         padding: auto 10px;
+        padding-bottom: 20px;
     }
     .contact-form{
         flex: 0 0 90%;
