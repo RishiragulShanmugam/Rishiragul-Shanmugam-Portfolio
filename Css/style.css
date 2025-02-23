@@ -18,6 +18,20 @@
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
 }
+:root{
+    --text-font-1: 12px;
+    --text-font-2: 14px;
+    --text-font-3: 16px;
+    --text-font-4: 18px;
+    --text-font-5: 20px;
+    --text-font-6: 23px;
+    --text-font-7: 25px;
+    --text-font-8: 28px;
+    --text-font-9: 32px;
+    --text-font-10: 35px;
+    --text-font-11: 40px;
+    --text-font-12: 45px;
+}
 body.dark{
     --bg-black-900: #151515;
     --bg-black-100: #222222;
@@ -29,7 +43,6 @@ body{
     margin: 0;
     padding: 0;
     line-height: 1.5;
-    font-size: 16px;
     color: var(--text-black-900);
 }
 *{
@@ -52,11 +65,11 @@ body{
 }
 .section-title{
     text-align: center;
-    font-size: 3rem;
+    font-size: var(--text-font-11);
     text-transform: capitalize;
 }
 .section-title-topic{
-    font-size: 12px;
+    font-size: var(--text-font-1);
     text-transform: uppercase;
     color: var(--skin-color);
     text-align: center;
@@ -80,7 +93,7 @@ body{
     position: relative;
 }
 .btn{
-    font-size: 16px;
+    font-size: var(--text-font-3);
     font-weight: 500;
     padding: 12px 35px;
     color: white;
@@ -146,7 +159,7 @@ body{
 .aside .logo{
     position: absolute;
     top: 50px;
-    font-size: 30px;
+    font-size: var(--text-font-8);
     text-transform: capitalize;
 }
 .aside .logo a{
@@ -156,7 +169,7 @@ body{
     letter-spacing: 2px;
 }
 .aside .logo a span{
-    font-size: 40px;
+    font-size: var(--text-font-11);
     font-weight: 800;
 }
 .aside .logo a::before{
@@ -228,7 +241,7 @@ body{
     display: block;
 }
 .aside .nav li a{
-    font-size: 16px;
+    font-size: var(--text-font-3);
     font-weight: 600;
     display: block;
     border-bottom: 1px solid var(--bg-black-50);
@@ -259,22 +272,30 @@ body{
     display: flex;
     color: var(--text-black-900);
 }
+.home-container{
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 .home .home-info{
     flex: 0 0 60%;
     max-width: 60%;
 }
 h3.hello{
-    font-size: 28px;
+    font-size: var(--text-font-9);
     margin: 15px 0;
 }
 h3.hello span{
-    font-size: 40px;
+    font-size: var(--text-font-11);
     font-weight: 700;
     color: var(--skin-color);
     font-family: "Great Vibes", serif;
 }
 h3.my-profession{
-    font-size: 30px;
+    font-size: var(--text-font-9);
     margin: 15px 0;
 }
 .typing{
@@ -282,7 +303,7 @@ h3.my-profession{
 }
 .home-info p{
     margin: 0;
-    font-size: 17px;
+    font-size: var(--text-font-3);
     color: var(--text-black-900);
     margin-bottom: 30px;
 }
@@ -340,8 +361,8 @@ h3.my-profession{
     position: relative;
 }
 .icons a .icon-layer{
-    width: 45px;
-    height: 45px;
+    width: var(--text-font-12);
+    height: var(--text-font-12);
     transition: transform 0.3s;
 }
 .icons a:hover .icon-layer{
@@ -358,7 +379,7 @@ h3.my-profession{
     transition: all 0.3s;
 }
 .icons a .icon-layer span.fab{
-    font-size: 25px;
+    font-size: var(--text-font-8);
     line-height: 50px;
     text-align: center;
 }
@@ -444,7 +465,7 @@ h3.my-profession{
     max-width: 100%;
 }
 .about-content h2{
-    font-size: 30px;
+    font-size: var(--text-font-9);
     text-align: center;
     margin-bottom: 20px;
 }
@@ -453,7 +474,7 @@ h3.my-profession{
 }
 .about-content p{
     text-indent: 3em;
-    font-size: 18px;
+    font-size: var(--text-font-4);
     line-height: 30px;
 }
 .about-content p a{
@@ -474,7 +495,7 @@ h3.my-profession{
 .info-item p{
     font-weight: 800;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: var(--text-font-3);
     color: var(--text-black-900);
 }
 .info-item p span{
@@ -527,7 +548,7 @@ h3.my-profession{
     text-align: center;
 }
 .icon i{
-    font-size: 40px;
+    font-size: var(--text-font-11);
     line-height: 60px;
     color: var(--skin-color);
 }
@@ -536,18 +557,18 @@ h3.my-profession{
 
 }
 .service-item-info:hover .icon i{
-    font-size: 30px;
+    font-size: var(--text-font-9);
     color: #ffffff;
 }
 .service-item-info h4{
-    font-size: 23px;
+    font-size: var(--text-font-7);
     margin-bottom: 15px;
     color: var(--text-black-900);
     font-weight: 700;
     text-transform: capitalize;
 }
 .service-item-info p{
-    font-size: 16px;
+    font-size: var(--text-font-3);
     color: var(--text-black-700);
     line-height: 25px;
 }
@@ -578,13 +599,13 @@ h3.my-profession{
     background: var(--bg-black-100);
 }
 .skill-box-section h2{
-    font-size: 20px;
+    font-size: var(--text-font-5);
     font-weight: 900;
     text-transform: uppercase;
     margin: 20px 0 10px;
 }
 .skill-box-section h2 i{
-    font-size: 20px;
+    font-size: var(--text-font-6);
     margin-right: 10px;
     font-weight: 600;
 }
@@ -607,12 +628,12 @@ h3.my-profession{
     border-radius: 10px;
 }
 .skill-bar img{
-    width: 28px;
-    height: 28px;
+    width: var(--text-font-8);
+    height: var(--text-font-8);
 }
 .skill-bar p{
     text-transform: capitalize;
-    font-size: 16px;
+    font-size: var(--text-font-3);
     font-weight: 600;
     margin-right: 10px;
 }
@@ -656,12 +677,12 @@ h3.my-profession{
 }
 .year{
     font-weight: 900;
-    font-size: 15px;
+    font-size: var(--text-font-3);
     color: var(--skin-color);
 }
 .education-marks{
     font-weight: 900;
-    font-size: 15px;
+    font-size: var(--text-font-3);
     color: var(--skin-color);
 }
 .details{
@@ -673,16 +694,17 @@ h3.my-profession{
 }
 .content h3{
     text-align: center;
-    font-size: 22px;
+    font-size: var(--text-font-6);
     margin: 10px 0;
 }
 .content h4{
     text-align: center;
-    font-size: 19px;
+    font-size: var(--text-font-5);
     margin: 5px 0;
 }
 .content p{
-    font-size: 17px;
+    font-size: var(--text-font-4);
+    text-align: justify;
 }
 
 /* ...education-section-end... */
@@ -701,7 +723,7 @@ h3.my-profession{
     gap: 20px;
 }
 .project-box{
-    width: 350px;
+    width: 30%;
     border: 2px solid var(--skin-color);
     border-radius: 10px;
     cursor: pointer;
@@ -724,18 +746,18 @@ h3.my-profession{
     padding: 3px;
     margin: 0 5px;
     padding: 7px 10px;
-    font-size: 15px;
+    font-size: var(--text-font-3);
     color: var(--skin-color);
     border-radius: 10px;
     background: var(--bg-black-900);
 }
 .project-content h3{
     margin-top: 20px;
-    font-size: 18px;
+    font-size: var(--text-font-4);
     margin-bottom: 10px;
 }
 .project-content p{
-    font-size: 16px;
+    font-size: var(--text-font-3);
     margin-bottom: 20px;
     text-align: justify;
 }
@@ -762,7 +784,6 @@ h3.my-profession{
     border: 1px solid var(--text-black-900);
     background-color: var(--bg-black-900);
     color: var(--skin-color);
-    font-style: 12px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -831,7 +852,7 @@ h3.my-profession{
     font-size: 25px;
 }
 .close-icon-button i{
-    font-size: 30px;
+    font-size: var(--text-font-9);
     cursor: pointer;
     color: var(--text-black-900);
 }
@@ -850,7 +871,7 @@ h3.my-profession{
     overflow-y: auto;
 }
 .popup-project-container-body h1{
-    font-size: 25px;
+    font-size: var(--text-font-7);
     font-weight: 900;
     text-transform: capitalize;
     color: var(--text-black-900);
@@ -859,7 +880,7 @@ h3.my-profession{
     text-align: justify;
     margin: 15px 0;
     text-indent: 2em;
-    font-size: 15px;
+    font-size: var(--text-font-3);
     font-weight: 500;
     color: var(--text-black-900);
 }
@@ -891,7 +912,7 @@ h3.my-profession{
     justify-content: space-evenly;
 }
 .popup-project-container-footer a{
-    font-size: 16px;
+    font-size: var(--text-font-3);
     width: 30%;
     text-align: center;
     font-weight: 500;
@@ -928,23 +949,23 @@ h3.my-profession{
     height: auto;
     padding: 15px;
     text-align: center;
-    min-width: 220px;
+    width: 220px;
 }
 .contact-block i{
-    font-size: 30px;
+    font-size: var(--text-font-9);
     color: var(--skin-color);
     margin: 10px;
     padding: 15px;
     border-radius: 50%;
 }
 .contact-block h2{
-    font-size: 20px;
+    font-size: var(--text-font-5);
     text-transform: uppercase;
     margin: 20px 0;
     padding: 10px;
 }
 .contact-block p{
-    font-size: 15px;
+    font-size: var(--text-font-3);
 }
 .contact-block:hover i{
     color: var(--bg-black-900);
@@ -1036,7 +1057,7 @@ h3.my-profession{
 }
 .mail-section-title{
     text-align: center;
-    font-size: 3rem;
+    font-size: var(--text-font-12);
 }
 .mail-section-title-span{
     margin-left: 10px;
@@ -1092,20 +1113,20 @@ textarea.form-control{
     background: var(--bg-black-900);
 }
 .footer-title h2{
-    font-size: 25px;
+    font-size: var(--text-font-7);
     text-transform: uppercase;
     margin-bottom: 5px;
     font-weight: 900;
 }
 .footer-social-media h3{
-    font-size: 20px;
+    font-size: var(--text-font-5);
     margin-bottom: 20px;
 }
 .footer-social-media h3 span{
     color: var(--skin-color);
 }
 .social-media-section i{
-    font-size: 35px;
+    font-size: var(--text-font-10);
     margin: 0 5px;
     cursor: pointer;
 }
