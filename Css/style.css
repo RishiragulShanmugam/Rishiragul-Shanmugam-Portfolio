@@ -108,6 +108,31 @@ body{
 .btn:hover{
     transform: scale(1.05);
 }
+.home{
+    background: var(--bg-black-900);
+}
+.about{
+    background: var(--bg-black-100);
+}
+.service{
+    background: var(--bg-black-900);
+}
+.skill{
+    background: var(--bg-black-100);
+}
+.education{
+    background: var(--bg-black-900);
+}
+.project{
+    background: var(--bg-black-100);
+}
+.contact{
+    background: var(--bg-black-900);
+}
+.footer{
+    background: var(--bg-black-100);
+}
+
 
 /* ...universal-section-end... */
 
@@ -597,7 +622,7 @@ h3.my-profession{
     border: 2px solid var(--skin-color);
     border-radius: 10px;
     cursor: pointer;
-    background: var(--bg-black-100);
+    background: var(--bg-black-900);
 }
 .skill-box-section h2{
     font-size: var(--text-font-5);
@@ -728,7 +753,7 @@ h3.my-profession{
     border: 2px solid var(--skin-color);
     border-radius: 10px;
     cursor: pointer;
-    background: var(--bg-black-100);
+    background: var(--bg-black-900);
 }
 .project-image{
     margin: 10%;
@@ -1113,8 +1138,7 @@ textarea.form-control{
 
 .footer{
     text-align: center;
-    padding-bottom: 50px;
-    background: var(--bg-black-900);
+    padding: 50px 0;
 }
 .footer-title h2{
     font-size: var(--text-font-7);
