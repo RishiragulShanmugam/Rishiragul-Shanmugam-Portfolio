@@ -194,6 +194,16 @@
         top: 4px;
         left: 0;
     }
+    .education-box{
+        margin: 3% 0;
+        border-left: none;
+    }
+    .education-content{
+        padding-left: none;
+    }
+    .education-content::before{
+        display: none;
+    }
 }
 
 
