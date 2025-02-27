@@ -1,6 +1,5 @@
 // navbar section active color section
 
-
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.aside .nav li a');
 
@@ -28,9 +27,7 @@ window.addEventListener('scroll', () => {
 
 
 
-
 // project-filter button option section
-
 
 const buttons = document.querySelectorAll('.button-group button');
 const projectBoxes = document.querySelectorAll('.project-box');
@@ -59,17 +56,7 @@ buttons.forEach((button) => {
 
 
 
-
-
-
-
-
-
-
-
-
 // popup-project open and close section
-
 
 const projectBox1 = document.querySelector('.p1');
 const projectBox2 = document.querySelector('.p2');
@@ -161,22 +148,45 @@ closeButton7.addEventListener('click', () => {
 
 
 
+// aside section open on the smaller screen
 
 
-// aside section open onn the smaller screen
-
-
-const aside = document.querySelector('.aside');
 const navToggler = document.querySelector('.nav-toggler');
+const menuIcon = navToggler.querySelector('.bx-menu');
+const closeIcon = navToggler.querySelector('.bx-x');
+const nav = document.querySelector('.nav');
+const aside = document.querySelector('.aside');
 
 navToggler.addEventListener('click', () => {
-  aside.classList.toggle('open');
-  navToggler.classList.toggle('close');
+  if (menuIcon.style.display !== 'none') {
+    nav.classList.add('show');
+    aside.classList.add('open');
+    menuIcon.style.display = 'none';
+    closeIcon.style.display = 'block';
+  } else {
+    nav.classList.remove('show');
+    aside.classList.remove('open');
+    menuIcon.style.display = 'block';
+    closeIcon.style.display = 'none';
+  }
 });
 
-document.querySelectorAll('.nav a').forEach((link) => {
-  link.addEventListener('click', () => {
+nav.addEventListener('click', (e) => {
+  if (e.target.tagName === 'A') {
+    nav.classList.remove('show');
     aside.classList.remove('open');
-    navToggler.classList.remove('close');
-  });
+    menuIcon.style.display = 'block';
+    closeIcon.style.display = 'none';
+  }
 });
+
+
+
+
+
+
+
+
+
+
+
