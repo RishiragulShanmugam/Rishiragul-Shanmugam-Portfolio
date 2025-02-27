@@ -2,6 +2,9 @@
 /* ...google-fonts-link-section-start... */
 
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
 
 /* ...google-fonts-link-section-end... */
 
@@ -43,7 +46,8 @@ body{
     text-decoration: none;
     list-style-type: none;
     scroll-behavior: smooth;
-    font-family: "Poppins";
+    /* font-family: "Poppins"; */
+    font-family: "Frank Ruhl Libre", serif;
 }
 ::before, ::after{
     box-sizing: border-box;
@@ -56,18 +60,24 @@ body{
     text-align: center;
     font-size: var(--h1-text);
     text-transform: capitalize;
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
 }
 .section-title-topic{
     font-size: var(--p-text);
     text-transform: uppercase;
     color: var(--skin-color);
     text-align: center;
-    font-weight: 800;
+    font-family: "Moon Dance", serif;
+    font-weight: 900;
+    font-style: normal;
 }
 .section-title-span{
     color: var(--skin-color);
     margin-left: 10px;
     text-transform: capitalize;
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
 }
 .main-content{
     padding-left: 310px;
@@ -277,7 +287,7 @@ body{
     margin: 15px 0;
 }
 .hello span{
-    font-size: var(--h1-text);
+    font-size: var(--h2-text);
     font-weight: 700;
     color: var(--skin-color);
     font-family: "Great Vibes", serif;
@@ -1073,10 +1083,6 @@ body{
     padding: 0 5%;
     padding-bottom: 30px;
 }
-.mail-section-title-span{
-    margin-left: 10px;
-    color: var(--skin-color);
-}
 .contact-form{
     flex: 0 0 100%;
     margin-top: 30px;
@@ -1129,7 +1135,8 @@ textarea.form-control{
     font-size: var(--h4-text);
     text-transform: uppercase;
     margin-bottom: 5px;
-    font-weight: 900;
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
 }
 .footer-social-media a{
     color: var(--text-black-900);
@@ -1137,9 +1144,13 @@ textarea.form-control{
 .footer-social-media h4{
     font-size: var(--h5-text);
     margin: 20px 0 30px;
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
 }
 .footer-social-media h4 span{
     color: var(--skin-color);
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
 }
 .social-media-section{
     display: flex;
@@ -1197,13 +1208,13 @@ textarea.form-control{
     --color: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
 }
 .icon:has(.bxl-linkedin){
-    --color: #0077b5;
+    --color: #1da1f2;
 }
 .icon:has(.bxl-gmail){
     --color: #ff0000;
 }
 .icon:has(.bxl-facebook){
-    --color: #1da1f2;
+    --color: #0077b5;
 }
 .icon:has(.bxl-whatsapp){
     --color: #08f70c;
