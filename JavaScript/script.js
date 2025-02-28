@@ -65,6 +65,7 @@ const projectBox4 = document.querySelector('.p4');
 const projectBox5 = document.querySelector('.p5');
 const projectBox6 = document.querySelector('.p6');
 const projectBox7 = document.querySelector('.p7');
+const projectBox8 = document.querySelector('.p8');
 
 const popupProject1 = document.querySelector('.p1-popup');
 const popupProject2 = document.querySelector('.p2-popup');
@@ -73,6 +74,7 @@ const popupProject4 = document.querySelector('.p4-popup');
 const popupProject5 = document.querySelector('.p5-popup');
 const popupProject6 = document.querySelector('.p6-popup');
 const popupProject7 = document.querySelector('.p7-popup');
+const popupProject8 = document.querySelector('.p8-popup');
 
 const closeButton1 = document.querySelector('.p1-popup .close-icon-button');
 const closeButton2 = document.querySelector('.p2-popup .close-icon-button');
@@ -81,6 +83,7 @@ const closeButton4 = document.querySelector('.p4-popup .close-icon-button');
 const closeButton5 = document.querySelector('.p5-popup .close-icon-button');
 const closeButton6 = document.querySelector('.p6-popup .close-icon-button');
 const closeButton7 = document.querySelector('.p7-popup .close-icon-button');
+const closeButton8 = document.querySelector('.p8-popup .close-icon-button');
 
 
 projectBox1.addEventListener('click', () => {
@@ -146,6 +149,15 @@ closeButton7.addEventListener('click', () => {
   document.body.style.overflow = 'auto';
 });
 
+projectBox8.addEventListener('click', () => {
+  popupProject8.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+});
+closeButton8.addEventListener('click', () => {
+  popupProject8.style.display = 'none';
+  document.body.style.overflow = 'auto';
+});
+
 
 
 // aside section open on the smaller screen
@@ -179,14 +191,5 @@ nav.addEventListener('click', (e) => {
     closeIcon.style.display = 'none';
   }
 });
-
-
-
-
-
-
-
-
-
 
 
