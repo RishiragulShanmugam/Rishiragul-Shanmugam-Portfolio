@@ -193,3 +193,26 @@ nav.addEventListener('click', (e) => {
 });
 
 
+
+
+
+
+
+const serviceItems = document.querySelectorAll('.service-item');
+const popupServices = document.querySelectorAll('.popup-service');
+
+serviceItems.forEach((serviceItem, index) => {
+  serviceItem.addEventListener('click', () => {
+    const popupService = popupServices[index];
+    popupService.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+document.querySelectorAll('.close-icon-button').forEach((closeButton) => {
+  closeButton.addEventListener('click', () => {
+    const popupService = closeButton.parentElement.parentElement.parentElement;
+    popupService.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  });
+});
