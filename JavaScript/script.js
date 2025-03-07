@@ -1,11 +1,10 @@
-// navbar section active color section
+// navbar section active color section start
 
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.aside .nav li a');
 
 window.addEventListener('scroll', () => {
   let currentSection = '';
-
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.offsetHeight;
@@ -15,7 +14,6 @@ window.addEventListener('scroll', () => {
       currentSection = section.id;
     }
   });
-
   navLinks.forEach((link) => {
     link.classList.remove('active');
 
@@ -25,21 +23,19 @@ window.addEventListener('scroll', () => {
   });
 });
 
+// navbar section active color section end
 
 
-// project-filter button option section
+// project-filter button option section start
 
 const buttons = document.querySelectorAll('.button-group button');
 const projectBoxes = document.querySelectorAll('.project-box');
-
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
     const filterValue = button.getAttribute('data-filter');
     const activeButton = document.querySelector('.button-group button.active');
-
     activeButton.classList.remove('active');
     button.classList.add('active');
-
     projectBoxes.forEach((projectBox) => {
       if (filterValue === '*') {
         projectBox.style.display = 'block';
@@ -54,9 +50,10 @@ buttons.forEach((button) => {
   });
 });
 
+// project-filter button option section end
 
 
-// popup-project open and close section
+// popup-project open and close section start
 
 const projectBox1 = document.querySelector('.p1');
 const projectBox2 = document.querySelector('.p2');
@@ -158,17 +155,16 @@ closeButton8.addEventListener('click', () => {
   document.body.style.overflow = 'auto';
 });
 
+// popup-project open and close section end
 
 
-// aside section open on the smaller screen
-
+// aside section open on the smaller screen start
 
 const navToggler = document.querySelector('.nav-toggler');
 const menuIcon = navToggler.querySelector('.bx-menu');
 const closeIcon = navToggler.querySelector('.bx-x');
 const nav = document.querySelector('.nav');
 const aside = document.querySelector('.aside');
-
 navToggler.addEventListener('click', () => {
   if (menuIcon.style.display !== 'none') {
     nav.classList.add('show');
@@ -182,7 +178,6 @@ navToggler.addEventListener('click', () => {
     closeIcon.style.display = 'none';
   }
 });
-
 nav.addEventListener('click', (e) => {
   if (e.target.tagName === 'A') {
     nav.classList.remove('show');
@@ -192,13 +187,12 @@ nav.addEventListener('click', (e) => {
   }
 });
 
+// aside section open on the smaller screen end
 
 
+// Popup service section open and close start 
 
-
-
-
-const serviceItems = document.querySelectorAll('.service-item');
+const serviceItems = document.querySelectorAll('.s1, .s2, .s3');
 const popupServices = document.querySelectorAll('.popup-service');
 
 serviceItems.forEach((serviceItem, index) => {
@@ -208,7 +202,6 @@ serviceItems.forEach((serviceItem, index) => {
     document.body.style.overflow = 'hidden';
   });
 });
-
 document.querySelectorAll('.close-icon-button').forEach((closeButton) => {
   closeButton.addEventListener('click', () => {
     const popupService = closeButton.parentElement.parentElement.parentElement;
@@ -216,3 +209,6 @@ document.querySelectorAll('.close-icon-button').forEach((closeButton) => {
     document.body.style.overflow = 'auto';
   });
 });
+
+// Popup service section open and close end
+

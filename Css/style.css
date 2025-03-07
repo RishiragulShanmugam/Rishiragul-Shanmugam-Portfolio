@@ -8,6 +8,7 @@
 
 /* ...google-fonts-link-section-end... */
 
+
 /* ...universal-section-start... */
 
 :root{
@@ -46,7 +47,6 @@ body{
     text-decoration: none;
     list-style-type: none;
     scroll-behavior: smooth;
-    /* font-family: "Poppins"; */
     font-family: "Frank Ruhl Libre", serif;
 }
 ::before, ::after{
@@ -121,11 +121,7 @@ body{
     background-color: var(--bg-black-100);
 }
 
-
 /* ...universal-section-end... */
-
-
-
 
 
 /* ...scrollbar-section-start... */
@@ -145,8 +141,6 @@ body{
 }
 
 /* ...scrollbar-section-end... */
-
-
 
 
 /* ...siderbar-section-start... */
@@ -260,10 +254,6 @@ body{
 /* ...sidebar-section-end... */
 
 
-
-
-
-
 /* ...home-section-start... */
 
 .home{
@@ -338,10 +328,6 @@ body{
 }
 
 /* ...home-section-end... */
-
-
-
-
 
 
 /* ...social-media-section-start... */
@@ -453,10 +439,7 @@ body{
 /* ...social-media-section-end... */
 
 
-
-
 /* ...about-section-start... */
-
 
 .about{
     padding: 50px;
@@ -509,9 +492,6 @@ body{
 }
 
 /* ...about-section-end... */
-
-
-
 
 
 /* ...service-section-start... */
@@ -594,6 +574,7 @@ body{
 /* ...service-section-end... */
 
 
+/* ...popup-service-section-start... */
 
 .popup-service{
     position: fixed;
@@ -634,7 +615,7 @@ body{
     align-items: center;
     font-weight: 700;
     color: var(--text-black-900);
-    font-size: var(--h4-text);
+    font-size: var(--h3-text);
 }
 .close-icon-button i{
     font-size: var(--h3-text);
@@ -670,12 +651,10 @@ body{
     vertical-align: top;
 }
 
-
-
+/* ...popup-service-section-end... */
 
 
 /* ...skill-section-start... */
-
 
 .skill{
     padding: 50px 20px;
@@ -732,10 +711,6 @@ body{
 }
 
 /* ...skill-section-end... */
-
-
-
-
 
 
 /* ...education-section-start... */
@@ -808,11 +783,7 @@ body{
 
 /* ...education-section-end... */
 
-
-
-
 /* ...project-section-start... */
-
 
 .project{
     padding: 50px;
@@ -887,9 +858,6 @@ body{
 /* ...project-section-end... */
 
 
-
-
-
 /* ...filter-button-section-start... */
 
 .button-group{
@@ -924,9 +892,6 @@ body{
 }
 
 /* ...filter-button-section-end... */
-
-
-
 
 
 /* ...popup-project-section-start... */
@@ -1045,9 +1010,6 @@ body{
 /* ...popup-project-section-end... */
 
 
-
-
-
 /* ...contact-info-section-start... */
 
 .contact{
@@ -1065,7 +1027,7 @@ body{
     width: 250px;
     height: 230px;
     border-radius: 14px;    
-    z-index: 11;
+    z-index: 3;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -1133,9 +1095,6 @@ body{
 /* ...contact-info-section-end... */
 
 
-
-
-
 /* ...form-section-start... */
 
 .mail-form-section{
@@ -1179,9 +1138,6 @@ textarea.form-control{
 }
 
 /* ...form-section-end... */
-
-
-
 
 
 /* ...footer-section-start... */
@@ -1280,16 +1236,4 @@ textarea.form-control{
 }
 
 /* ...footer-section-end... */
-
-
-
-
-
-
-
-
-
-
-
-
 
