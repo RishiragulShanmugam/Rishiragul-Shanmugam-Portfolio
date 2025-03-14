@@ -83,6 +83,7 @@ body{
     padding-left: 310px;
 }
 .btn{
+    font-size: var(--p-text);
     font-weight: 500;
     padding: 12px 35px;
     color: white;
@@ -524,7 +525,7 @@ body{
 .service-item .card__arrow {
     position: absolute;
     background: var(--skin-color);
-    border-radius: 40px 0 40px 0;
+    border-radius: 40px 0 37px 0;
     cursor: pointer;
     bottom: 0;
     right: 0;
@@ -872,7 +873,7 @@ body{
     background-color: var(--bg-black-900);
     color: var(--skin-color);
     font-weight: 800;
-    font-size: var(--h6-text);
+    font-size: var(--p-text);
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.4s;
@@ -882,7 +883,7 @@ body{
 }
 .button-group .button.active{
     background-color: var(--skin-color);
-    color: var(--bg-black-900);
+    color: white;
     border: 1px solid var(--skin-color);
 }
 .button-group .button:hover{
@@ -1001,7 +1002,7 @@ body{
     padding: 12px 35px;
     color: white;
     border: none;
-    border-radius: 40px;
+    border-radius: 25% 10%;
     display: inline-block;
     white-space: nowrap;
     background: var(--skin-color);
