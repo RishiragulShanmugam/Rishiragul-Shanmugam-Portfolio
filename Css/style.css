@@ -288,7 +288,7 @@ body{
     font-size: var(--h3-text);
     margin: 15px 0;
 }
-.typing{
+.my-profession span{
     color: var(--skin-color);
 }
 .home-info p{
@@ -831,6 +831,8 @@ body{
 }
 .project-contents h6{
     font-size: var(--h6-text);
+    color: var(--text-black-900);
+    font-weight: 900;
 }
 .project-contents p{
     font-size: var(--p-text);
